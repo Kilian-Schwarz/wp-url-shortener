@@ -1,0 +1,357 @@
+/* admin/styles.css */
+
+/* Basis-Stile */
+.mm-wrap {
+    background: #1F2532;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #ECEFF4;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+    border: 1px solid #393E49;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mm-wrap h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #ECEFF4;
+    text-align: center;
+}
+
+/* Formular-Stil */
+.wp-admin-url-shortener-form {
+    background: #2C313C;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #393E49;
+    margin-bottom: 40px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wp-admin-url-shortener-form .form-table th {
+    width: 160px; /* Verkürzte Breite */
+    padding: 15px 10px;
+    color: #ECEFF4;
+    text-align: left;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.wp-admin-url-shortener-form .form-table td {
+    padding: 15px 0;
+}
+
+.wp-admin-url-shortener-form input[type="text"],
+.wp-admin-url-shortener-form input[type="url"],
+.wp-admin-url-shortener-form textarea,
+.wp-admin-url-shortener-form select {
+    width: 100%;
+    background: #393E49;
+    color: #ECEFF4;
+    border: 1px solid #525864;
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.wp-admin-url-shortener-form input[type="number"],
+.wp-admin-url-shortener-form input[type="datetime-local"] {
+    width: 100%;
+    background: #393E49;
+    color: #ECEFF4;
+    border: 1px solid #525864;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.wp-admin-url-shortener-form input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.wp-admin-url-shortener-form .description {
+    font-size: 13px;
+    color: #B0B5BD;
+    margin-top: 5px;
+}
+
+.wp-admin-url-shortener-form .mm-upload-button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.wp-admin-url-shortener-form .mm-upload-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.wp-admin-url-shortener-form .mm-upload-button:active {
+    transform: translateY(0);
+}
+
+/* Buttons */
+.mm-upload-button,
+.mm-remove-button,
+.copy-link {
+    background-color: #6D727D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px; /* Abstand zwischen Buttons */
+}
+
+.mm-upload-button:hover,
+.mm-remove-button:hover,
+.copy-link:hover {
+    background-color: #90939C;
+    transform: translateY(-2px);
+}
+
+.mm-upload-button:active,
+.mm-remove-button:active,
+.copy-link:active {
+    transform: translateY(0);
+}
+
+.mm-remove-button {
+    background-color: #D63638;
+}
+
+.mm-remove-button:hover {
+    background-color: #A82A2C;
+}
+
+/* Kopieren Button */
+.copy-link {
+    background-color: #2196F3;
+    padding: 8px 16px;
+}
+
+.copy-link:hover {
+    background-color: #1976D2;
+}
+
+/* Tabellen-Stil */
+.wp-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.wp-list-table th,
+.wp-list-table td {
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 1px solid #525864;
+}
+
+.wp-list-table th {
+    background: #393E49;
+    color: #ECEFF4;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.wp-list-table td {
+    background: #2C313C;
+    color: #ECEFF4;
+}
+
+.wp-list-table tr:nth-child(even) td {
+    background: #353A45;
+}
+
+.wp-list-table tr:hover td {
+    background: #525864;
+}
+
+.wp-list-table a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wp-list-table a:hover {
+    text-decoration: underline;
+}
+
+/* Link-Feld Styling */
+.mm-link-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mm-link-field input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #525864;
+    border-radius: 5px 0 0 5px;
+    background: #393E49;
+    color: #ECEFF4;
+    font-size: 14px;
+}
+
+.mm-link-field button.copy-link {
+    border-radius: 0 5px 5px 0;
+    border-left: 1px solid #525864;
+}
+
+/* QR Code Styling */
+.mm-qr-code img {
+    border-radius: 10px;
+    border: 1px solid #525864;
+    padding: 5px;
+    background: #393E49;
+}
+
+/* Statistiken */
+.mm-stats-container {
+    background: #2C313C;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #393E49;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.mm-stats-chart {
+    background: #2C313C;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+/* Responsive Tabellen */
+@media screen and (max-width: 768px) {
+    .mm-details-container {
+        flex-direction: column;
+    }
+
+    .mm-form-section,
+    .mm-qr-section {
+        flex: 1 1 100%;
+    }
+
+    .wp-list-table th, .wp-list-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .wp-list-table tr {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .wp-list-table th {
+        background: #393E49;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .wp-list-table td {
+        padding: 10px;
+        border-top: none;
+    }
+
+    .mm-link-field {
+        flex-direction: column;
+    }
+
+    .mm-link-field input {
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .copy-link {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+/* Ergebnis-Nachrichten */
+#wp-us-create-result,
+#wp-us-update-result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Benutzerfeedback Nachrichten */
+.notice-success.inline {
+    display: inline-block;
+    background-color: #48BB78;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.mm-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mm-form-section {
+    flex: 1 1 45%;
+    background: #2C313C;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #393E49;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.mm-qr-section {
+    flex: 1 1 45%;
+    background: #2C313C;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #393E49;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Statistiken */
+.mm-stats-container {
+    background: #2C313C;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #393E49;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.mm-stats-chart {
+    background: #2C313C;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
